@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Thesis</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Load the Paper.js library -->
+    <script type="text/javascript" src="js/paper-full.min.js"></script>
+    <!-- Define inlined PaperScript associate it with myCanvas -->
+    <script type="text/paperscript" src="js/canvasScript.js"canvas="myCanvas"></script>   
+</head>
+
+<body>
+    <div id="canv">
+        <canvas id="myCanvas" width="20vw" height="10vw" style="border:1px solid #e4e4e4;">
+        </canvas>
+    </div>
+    <div class="tools">
+        <div class="specImg">
+            <img src="ColourSpectrum.png" alt="spec" width="100%" height="auto" class="go">
+            <canvas id="spec"></canvas>
+        </div>
+        <div class="mods">
+            <div id="mod1">
+
+            </div>
+            <div id="mod2">
+
+            </div>
+        </div>
+        <div class="boxes">
+            <div class="box box1" value="1"></div>
+            <div class="box box2" value="2"></div>
+            <div class="box box3" value="3"></div>
+            <div class="box box4" value="4"></div>
+            <div class="box box5" value="5"></div>
+            <div class="box box6" value="6"></div>
+            <div class="box box7" value="7"></div>
+            <div class="box box8" value="8"></div>
+        </div>
+    </div>
+    <div class="btns">
+        <div class="btn">
+            <button class="btun" id="btn1">&#xf112;</button>
+        </div>
+        <div class="btn">
+            <button class="btun" id="btn2">&#xf064;</button>
+        </div>
+        <div class="btn">
+            <button class="btun" id="btn3">&#xf0e2;</button>
+        </div>
+        <div class="btn">
+            <button class="btun" id="btn4">&#xf093;</button>
+        </div>
+    </div>
+
+    <script src="https://use.fontawesome.com/bd8d2b644e.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="https://www.w3schools.com/lib/w3color.js"></script>
+    <script src="script.js"></script>
+    
+        
+    </script>
+</body>
+
+</html>
