@@ -1,0 +1,8 @@
+The project is about color theory and finding the emotional patterns from it (Hammad Can Explain more).
+
+the current index.html file contains the image of a color bar that has all the color value. Above it is the canvas where all the magic
+is going to happen.
+I am fetching the color from the bar and applying the hue, saturation for the bottom two bar, and then providing the option to
+select the color.
+To provide the mixing of color I can't think of a proper idea, however I have made the drawing.html file which provides the
+color mixing ability but its a with overlap.

@@ -101,10 +101,3 @@ function updateWave(path) {
     }
     path.smooth({ type: 'continuous' });
 }
-
-function onKeyDown(event) {
-    if (event.key == 'space') {
-        path.fullySelected = !path.fullySelected;
-        path.fillColor = path.fullySelected ? null : 'black';
-    }
-}
