@@ -8,14 +8,27 @@
     <title>Document</title>
 
     <style>
-        body{
+        @media only screen and (min-width: 1024px) {
+            #myCanvas {
+                margin: 2em;
+                width: 600px;
+                height: 360px;
+            }
+        }
+
+        @media only screen and (min-width: 1440px) {
+            #myCanvas {
+                margin: 4em 5em;
+                width: 1225px;
+                height: 450px;
+            }
+        }
+
+        body {
             background-color: black;
         }
 
-        #myCanvas{
-            margin: 4em 5em;
-            width: 1225px;
-            height: 450px;
+        #myCanvas {
             border: 2px solid white;
         }
     </style>
@@ -24,11 +37,15 @@
 <body>
     <canvas id="myCanvas"></canvas>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/4.5.1/pixi.min.js"></script>
 <script>
     console.clear();
+    var width = $('#myCanvas').width();
+    var height = $('#myCanvas').height();
 
-    var app = new PIXI.Application(1225, 450, {
+    console.log(width + ' ' + height);
+    var app = new PIXI.Application(width, height, {
         autoStart: false,
         backgroundColor: 0x000000,
         view: myCanvas
